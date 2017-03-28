@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--定义一个线性布局，放置增大、降低、切换下一张的按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="增大透明度"
+            android:textSize="15dp"
+            android:textColor="#F7F7F7"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_selector"/>
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="降低透明度"
+            android:textSize="15dp"
+            android:textColor="#F7F7F7"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_selector"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一张"
+            android:textSize="15dp"
+            android:textColor="#F7F7F7"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_selector"/>
+
+    </LinearLayout>
+    <!--定义图片整体的ImageView fitCenter保持纵横比缩放图片，直到该图能完全显示在ImageView中，缩放完成后，显示在ImageView中央-->
+    <ImageView android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lijiang"
+        android:scaleType="fitCenter"/>
+</LinearLayout>
